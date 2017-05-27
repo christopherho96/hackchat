@@ -19,6 +19,8 @@
 		FECD0FEB1ED97BBC003CDFAF /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEA1ED97BBC003CDFAF /* DBProvider.swift */; };
 		FECD0FED1ED97C8F003CDFAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEC1ED97C8F003CDFAF /* Constants.swift */; };
 		FECD0FEF1ED98774003CDFAF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEE1ED98774003CDFAF /* Contact.swift */; };
+		FECD0FF11ED98FB6003CDFAF /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */; };
+		FECD0FF31ED9AF8F003CDFAF /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		FECD0FEA1ED97BBC003CDFAF /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
 		FECD0FEC1ED97C8F003CDFAF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FECD0FEE1ED98774003CDFAF /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			children = (
 				FECD0FE01ED91EEA003CDFAF /* SignInVC.swift */,
 				FECD0FE21ED921C7003CDFAF /* ContactsVC.swift */,
+				FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			children = (
 				FECD0FE61ED93F37003CDFAF /* AuthProvider.swift */,
 				FECD0FEA1ED97BBC003CDFAF /* DBProvider.swift */,
+				FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECD0FF31ED9AF8F003CDFAF /* MessagesHandler.swift in Sources */,
+				FECD0FF11ED98FB6003CDFAF /* ChatVC.swift in Sources */,
 				FECD0FE11ED91EEA003CDFAF /* SignInVC.swift in Sources */,
 				FECD0FCB1ED91A08003CDFAF /* AppDelegate.swift in Sources */,
 				FECD0FEB1ED97BBC003CDFAF /* DBProvider.swift in Sources */,

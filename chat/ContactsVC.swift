@@ -13,6 +13,7 @@ class ContactsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     @IBOutlet weak var myTable: UITableView!
     
     private let CELL_ID = "Cell";
+    private let CHAT_SEGUE = "ChatSegue";
     
     private var contacts = [Contact]();
     
@@ -30,6 +31,11 @@ class ContactsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         self.contacts = contacts;
         
         //get the name of current user
+        for contact in contacts {
+            if contact.id == AuthProvider.Instance.userID(){
+                AuthProvider.Instance.userName = contact.name;
+            }
+        }
         
         myTable.reloadData();
     }
@@ -49,6 +55,10 @@ class ContactsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         cell.textLabel?.text = contacts[indexPath.row].name;
         
         return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: CHAT_SEGUE, sender: nil);
     }
     
     @IBAction func logout(_ sender: Any) {

@@ -117,17 +117,17 @@
                     </view>
                     <connections>
                         <outlet property="myTable" destination="y5c-Ab-Jbu" id="ABB-PB-aWq"/>
-                        <segue destination="2jw-Pf-fKn" kind="show" id="W9m-Iv-1D9"/>
+                        <segue destination="2jw-Pf-fKn" kind="show" identifier="ChatSegue" id="W9m-Iv-1D9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcY-yi-oVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960.79999999999995" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat-->
         <scene sceneID="orK-RS-TCo">
             <objects>
-                <viewController id="Ctg-3b-M4Q" sceneMemberID="viewController">
+                <viewController id="Ctg-3b-M4Q" customClass="ChatVC" customModule="chat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dc2-8X-2h1"/>
                         <viewControllerLayoutGuide type="bottom" id="pZK-RG-v6w"/>
@@ -137,7 +137,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eTz-8x-r2j"/>
+                    <navigationItem key="navigationItem" title="Chat" id="eTz-8x-r2j">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="jYN-PW-js1">
+                            <connections>
+                                <action selector="backBtn:" destination="Ctg-3b-M4Q" id="LpS-0J-GU6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKu-WV-6aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
