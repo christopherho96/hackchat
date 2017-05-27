@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 import FirebaseAuth
 
 typealias LoginHandler = (_ msg:String?)-> Void;
@@ -28,6 +29,8 @@ class AuthProvider{
         return _instance;
     }
     
+    var userName = "";
+    
     func login(withEmail:String, password: String, loginHandler: LoginHandler?){
         Auth.auth().signIn(withEmail: withEmail, password: password, completion: {
             (user, error) in
@@ -43,7 +46,9 @@ class AuthProvider{
     
     private func handleErrors(err: NSError, loginHandler: LoginHandler?){
         
+        
         if let errCode = AuthErrorCode(rawValue: err.code){
+            
             switch errCode {
                 
             case AuthErrorCode.invalidEmail:
@@ -71,6 +76,7 @@ class AuthProvider{
                 break;
                 
             }
+        
         }
     }
     

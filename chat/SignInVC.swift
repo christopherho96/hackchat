@@ -30,18 +30,24 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
-        if emailTextField.text! != "" && passwordTextField.text != ""{
+        if emailTextField.text != "" && passwordTextField.text != ""{
          
             AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text! , loginHandler: {
                 (message) in
                 
                 if message != nil{
-                    self.alertTheUser(title: "Problem with authentication", message: message!);
-                }else{
-                    print("login completed");
-                }
-            });
+                   self.alertTheUser(title: "Problem with authentication", message: message!);
             
+            
+                }else{
+                    self.emailTextField.text = "";
+                    self.passwordTextField.text = "";
+                    self.performSegue(withIdentifier: self.CONTACTS_SEGUE, sender: nil);
+                }
+            
+            })
+        }else{
+            alertTheUser(title: "email and password are required", message: "please enter email and password in text fields");
         }
     }
 
@@ -49,7 +55,14 @@ class SignInVC: UIViewController {
 
 
     @IBAction func signUp(_ sender: Any) {
-        
+        if emailTextField.text != "" && passwordTextField.text != ""{
+         
+          //  AuthProvider.Instance.signUp()
+            
+        }else{
+            alertTheUser(title: "email and password are required", message: "please enter email and password in text fields");
+        }
+
     }
 
     private func alertTheUser(title:String, message: String){
