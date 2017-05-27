@@ -24,9 +24,11 @@ class SignInVC: UIViewController {
     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // if already signed in previously, stops the need to sign in again
+    override func viewDidAppear(_ animated: Bool) {
+        if AuthProvider.Instance.isLoggedIn(){
+            performSegue(withIdentifier: self.CONTACTS_SEGUE, sender: nil);
+        }
     }
     
     @IBAction func login(_ sender: Any) {
@@ -55,9 +57,20 @@ class SignInVC: UIViewController {
 
 
     @IBAction func signUp(_ sender: Any) {
-        if emailTextField.text != "" && passwordTextField.text != ""{
+        if emailTextField.text != "" && passwordTextField.text != ""
+        {
          
-          //  AuthProvider.Instance.signUp()
+            AuthProvider.Instance.signUp(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: {
+                (message) in
+                
+                if message != nil {
+                    self.alertTheUser(title: "Problem with creating a new user", message: message!);
+                }else{
+                    self.emailTextField.text = "";
+                    self.passwordTextField.text = "";
+                    self.performSegue(withIdentifier: self.CONTACTS_SEGUE, sender: nil);
+                }
+            })
             
         }else{
             alertTheUser(title: "email and password are required", message: "please enter email and password in text fields");

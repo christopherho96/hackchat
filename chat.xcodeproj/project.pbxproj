@@ -16,6 +16,9 @@
 		FECD0FE31ED921C7003CDFAF /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FE21ED921C7003CDFAF /* ContactsVC.swift */; };
 		FECD0FE51ED92D47003CDFAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FECD0FE41ED92D47003CDFAF /* GoogleService-Info.plist */; };
 		FECD0FE71ED93F37003CDFAF /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FE61ED93F37003CDFAF /* AuthProvider.swift */; };
+		FECD0FEB1ED97BBC003CDFAF /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEA1ED97BBC003CDFAF /* DBProvider.swift */; };
+		FECD0FED1ED97C8F003CDFAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEC1ED97C8F003CDFAF /* Constants.swift */; };
+		FECD0FEF1ED98774003CDFAF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEE1ED98774003CDFAF /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FECD0FE21ED921C7003CDFAF /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		FECD0FE41ED92D47003CDFAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FECD0FE61ED93F37003CDFAF /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		FECD0FEA1ED97BBC003CDFAF /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		FECD0FEC1ED97C8F003CDFAF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FECD0FEE1ED98774003CDFAF /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		FECD0FDC1ED91E96003CDFAF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FECD0FEC1ED97C8F003CDFAF /* Constants.swift */,
+				FECD0FEE1ED98774003CDFAF /* Contact.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				FECD0FE61ED93F37003CDFAF /* AuthProvider.swift */,
+				FECD0FEA1ED97BBC003CDFAF /* DBProvider.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 			files = (
 				FECD0FE11ED91EEA003CDFAF /* SignInVC.swift in Sources */,
 				FECD0FCB1ED91A08003CDFAF /* AppDelegate.swift in Sources */,
+				FECD0FEB1ED97BBC003CDFAF /* DBProvider.swift in Sources */,
 				FECD0FE71ED93F37003CDFAF /* AuthProvider.swift in Sources */,
 				FECD0FE31ED921C7003CDFAF /* ContactsVC.swift in Sources */,
+				FECD0FED1ED97C8F003CDFAF /* Constants.swift in Sources */,
+				FECD0FEF1ED98774003CDFAF /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
