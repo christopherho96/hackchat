@@ -103,7 +103,7 @@
                                 <rect key="frame" x="0.0" y="11" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Contacts" id="mxn-tP-LrU">
+                                    <navigationItem title="See Whos Online" id="mxn-tP-LrU">
                                         <barButtonItem key="leftBarButtonItem" title="Logout" id="UEX-EJ-OUR">
                                             <connections>
                                                 <action selector="logout:" destination="lQH-Pq-3UG" id="amw-I7-Mcw"/>

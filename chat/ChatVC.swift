@@ -10,8 +10,10 @@ import UIKit
 import JSQMessagesViewController
 import MobileCoreServices
 import AVKit
+import SDWebImage
 
-class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+class ChatVC: JSQMessagesViewController, MessageReceivedDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     private var messages = [JSQMessage]();
     
@@ -21,8 +23,15 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self;
+        MessagesHandler.Instance.delegate = self;
+        
         self.senderId = AuthProvider.Instance.userID()
         self.senderDisplayName = AuthProvider.Instance.userName;
+        
+        MessagesHandler.Instance.observeMessages();
+        MessagesHandler.Instance.observeMediaMessages();
+        
+        
         
     }
     
@@ -31,9 +40,14 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
        
         let bubbleFactory = JSQMessagesBubbleImageFactory();
-      //  let message = messages[indexPath.item];
-       
-        return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.blue)
+        let message = messages[indexPath.item];
+        
+        if message.senderId == self.senderId{
+            return bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.blue)
+        }else{
+            return bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.darkGray)
+        }
+    
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource!{
@@ -110,13 +124,12 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         
         if let pic = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
-            let img = JSQPhotoMediaItem(image: pic);
-            self.messages.append (JSQMessage(senderId: senderId, displayName: senderDisplayName, media: img));
+            let data = UIImageJPEGRepresentation(pic, 0.01);
+            MessagesHandler.Instance.sendMedia(image: data, video: nil, senderID: senderId, senderName: senderDisplayName)
             
-        }else if let vidUrl = info[UIImagePickerControllerMediaURL] as? URL {
+        }else if let vidURL = info[UIImagePickerControllerMediaURL] as? URL {
             
-            let video = JSQVideoMediaItem(fileURL: vidUrl, isReadyToPlay: true);
-            messages.append(JSQMessage(senderId: senderId, displayName: senderDisplayName, media: video));
+            MessagesHandler.Instance.sendMedia(image: nil, video: vidURL, senderID: senderId, senderName: senderDisplayName)
         }
         self.dismiss(animated: true, completion: nil);
         collectionView.reloadData();
@@ -134,6 +147,63 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     }
     //END PICKER VIEW FUNCTIONS
     
+    //DELEGATION FUNCTIONS 
+    
+    func messageReceived(senderID: String, senderName: String, text: String) {
+        messages.append (JSQMessage(senderId: senderID, displayName: senderName, text: text));
+        collectionView.reloadData();
+    }
+    
+    func mediaReceived(senderID: String, senderName: String, url: String) {
+        
+        if let mediaURL = URL ( string: url)
+        {
+            do{
+               
+                let data = try Data (contentsOf: mediaURL);
+                
+                if let _ = UIImage(data: data){
+                    
+                    
+                    //download image
+                    let _ = SDWebImageDownloader.shared().downloadImage(with: mediaURL, options: [], progress: nil, completed: {(image, data, error, finished) in
+                        
+                        DispatchQueue.main.async{
+                            let photo = JSQPhotoMediaItem(image:image);
+                            
+                            if senderID == self.senderId{
+                                
+                                photo?.appliesMediaViewMaskAsOutgoing = true;
+                                
+                            }else{
+                                photo?.appliesMediaViewMaskAsOutgoing = false;
+                            }
+                            
+                            self.messages.append(JSQMessage(senderId: senderID, displayName: senderName, media: photo));
+                            self.collectionView.reloadData();
+                        }
+                        
+                    })
+                    
+                } else{
+                    
+                    let video = JSQVideoMediaItem(fileURL: mediaURL, isReadyToPlay: true);
+                    if senderID == self.senderId {
+                        video?.appliesMediaViewMaskAsOutgoing = true;
+                    }else{
+                        video?.appliesMediaViewMaskAsOutgoing = false;
+                    }
+                    
+                    messages.append(JSQMessage(senderId: senderID, displayName: senderName, media: video));
+                    
+                }
+            } catch {
+                //here we are gonna catch all potential errors that we get
+            }
+        }
+       
+    }
+    //END DELEGATION FUNCTIONS
     
     @IBAction func backBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)

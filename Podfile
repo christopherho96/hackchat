@@ -12,5 +12,6 @@ target 'chat' do
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'JSQMessagesViewController'
+    pod 'SDWebImage'
 
 end
