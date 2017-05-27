@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignInVC: UIViewController {
     
@@ -29,14 +30,35 @@ class SignInVC: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
-        performSegue(withIdentifier: CONTACTS_SEGUE, sender: nil);
+        if emailTextField.text! != "" && passwordTextField.text != ""{
+         
+            AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text! , loginHandler: {
+                (message) in
+                
+                if message != nil{
+                    self.alertTheUser(title: "Problem with authentication", message: message!);
+                }else{
+                    print("login completed");
+                }
+            });
+            
+        }
     }
-    
-    
+
+
+
+
     @IBAction func signUp(_ sender: Any) {
         
     }
 
+    private func alertTheUser(title:String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert);
+        let ok = UIAlertAction(title: "OK", style: .default, handler: nil);
+        alert.addAction(ok);
+        present(alert, animated: true, completion: nil);
+    }
+    
 } // class
 
 
