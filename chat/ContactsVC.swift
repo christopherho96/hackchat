@@ -30,10 +30,10 @@ class ContactsVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     func dataReceived(contacts: [Contact]) {
         self.contacts = contacts;
         
-        //get the name of current user
+       ///get the name of current user
         for contact in contacts {
             if contact.id == AuthProvider.Instance.userID(){
-                AuthProvider.Instance.userName = contact.name;
+              //  AuthProvider.Instance.userName = contact.name;
             }
         }
         
