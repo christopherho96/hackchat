@@ -11,7 +11,12 @@ import Firebase
 
 class SignInVC: UIViewController {
     
+    
     private let CONTACTS_SEGUE = "ContactsSegue"
+    private let VERIFY_SEGUE = "VerifySegue"
+    
+    private var userID = Directory();
+    
 
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -31,7 +36,23 @@ class SignInVC: UIViewController {
         }
     }
     
+    
+    
     @IBAction func login(_ sender: Any) {
+        
+        userID.user(forID: "ct4ho", handler: {meta, data in
+            
+            if let data = data["full_name"].string{
+                print(data);
+            }
+            
+            else{
+                print("Didnt work")
+            }
+        })
+        
+  
+        
         if emailTextField.text != "" && passwordTextField.text != ""{
          
             AuthProvider.Instance.login(withEmail: emailTextField.text!, password: passwordTextField.text! , loginHandler: {
@@ -57,7 +78,11 @@ class SignInVC: UIViewController {
 
 
     @IBAction func signUp(_ sender: Any) {
-        if emailTextField.text != "" && passwordTextField.text != ""
+        
+        //add the commented stuff to the verify page
+        
+        
+        /*if emailTextField.text != "" && passwordTextField.text != ""
         {
          
             AuthProvider.Instance.signUp(withEmail: emailTextField.text!, password: passwordTextField.text!, loginHandler: {
@@ -74,7 +99,9 @@ class SignInVC: UIViewController {
             
         }else{
             alertTheUser(title: "email and password are required", message: "please enter email and password in text fields");
-        }
+        }*/
+        
+        self.performSegue(withIdentifier: self.VERIFY_SEGUE, sender: nil);
 
     }
 

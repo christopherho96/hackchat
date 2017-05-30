@@ -21,6 +21,9 @@
 		FECD0FEF1ED98774003CDFAF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEE1ED98774003CDFAF /* Contact.swift */; };
 		FECD0FF11ED98FB6003CDFAF /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */; };
 		FECD0FF31ED9AF8F003CDFAF /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */; };
+		FECD10021EDC9CA1003CDFAF /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD10001EDC9CA1003CDFAF /* JSON.swift */; };
+		FECD10041EDC9D2A003CDFAF /* WatSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD10031EDC9D2A003CDFAF /* WatSwift.swift */; };
+		FECD10061EDCF2B9003CDFAF /* VerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD10051EDCF2B9003CDFAF /* VerifyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		FECD0FEE1ED98774003CDFAF /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
+		FECD10001EDC9CA1003CDFAF /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		FECD10031EDC9D2A003CDFAF /* WatSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.swift; sourceTree = "<group>"; };
+		FECD10051EDCF2B9003CDFAF /* VerifyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		FECD0FC91ED91A08003CDFAF /* chat */ = {
 			isa = PBXGroup;
 			children = (
+				FECD0FFF1EDC9C7F003CDFAF /* WatSwift */,
 				FECD0FDF1ED91EB3003CDFAF /* Plugins */,
 				FECD0FDE1ED91EA7003CDFAF /* Controller */,
 				FECD0FDD1ED91EA0003CDFAF /* View */,
@@ -130,6 +137,7 @@
 				FECD0FE01ED91EEA003CDFAF /* SignInVC.swift */,
 				FECD0FE21ED921C7003CDFAF /* ContactsVC.swift */,
 				FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */,
+				FECD10051EDCF2B9003CDFAF /* VerifyVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +150,16 @@
 				FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */,
 			);
 			name = Plugins;
+			sourceTree = "<group>";
+		};
+		FECD0FFF1EDC9C7F003CDFAF /* WatSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FECD10031EDC9D2A003CDFAF /* WatSwift.swift */,
+				FECD10001EDC9CA1003CDFAF /* JSON.swift */,
+			);
+			name = WatSwift;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,11 +288,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECD0FF31ED9AF8F003CDFAF /* MessagesHandler.swift in Sources */,
+				FECD10021EDC9CA1003CDFAF /* JSON.swift in Sources */,
 				FECD0FF11ED98FB6003CDFAF /* ChatVC.swift in Sources */,
 				FECD0FE11ED91EEA003CDFAF /* SignInVC.swift in Sources */,
 				FECD0FCB1ED91A08003CDFAF /* AppDelegate.swift in Sources */,
 				FECD0FEB1ED97BBC003CDFAF /* DBProvider.swift in Sources */,
 				FECD0FE71ED93F37003CDFAF /* AuthProvider.swift in Sources */,
+				FECD10061EDCF2B9003CDFAF /* VerifyVC.swift in Sources */,
+				FECD10041EDC9D2A003CDFAF /* WatSwift.swift in Sources */,
 				FECD0FE31ED921C7003CDFAF /* ContactsVC.swift in Sources */,
 				FECD0FED1ED97C8F003CDFAF /* Constants.swift in Sources */,
 				FECD0FEF1ED98774003CDFAF /* Contact.swift in Sources */,
