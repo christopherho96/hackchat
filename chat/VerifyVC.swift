@@ -10,19 +10,16 @@ import UIKit
 
 class VerifyVC: UIViewController {
     
-    private var user = Directory();
     private var studentID : String?
     private var studentPin: Int?
     private var studentConfirmPin: Int?
+    private var studentName: String?
+    private var studentEmail: String?
     
     
     
     @IBOutlet weak var studentIdDisplay: UITextField!
 
-
-    @IBOutlet weak var studentPinDisplay: UITextField!
-    
-    @IBOutlet weak var studentConfirmPinDisplay: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,27 +33,31 @@ class VerifyVC: UIViewController {
     }
     
     @IBAction func verifyId(_ sender: Any) {
-        studentID = studentIdDisplay.text!
         
-        if studentID! == "" {
+        if studentIdDisplay.text == "" {
             self.alertTheUser(title: "Empty ID field", message: "Plesae enter valid student ID.")
         }
         
         else{
-            user.user(forID: studentID!, handler: {meta, data in
+            studentID = studentIdDisplay.text!
+            WatSwift.Directory.user(forID: studentID!, handler: {response in
                 
-                if let data = data["full_name"].string{
-                    print(data);
+                let data: JSON = response.data
+                if self.studentID! ==  data["user_id"].string{
                     
-                    
+                    self.studentEmail = data["email_addresses"][0].string
+                    self.studentName = data["full_name"].string
+                    print(self.studentEmail!)
+                    print(self.studentName!)
                 }
                     
                 else{
                     self.alertTheUser(title: "Student ID cannot be found", message: "Please enter valid student ID.");
                 }
+
             })
-            
         }
+        
         
     }
     
@@ -67,4 +68,7 @@ class VerifyVC: UIViewController {
         present(alert, animated: true, completion: nil);
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

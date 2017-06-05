@@ -21,10 +21,50 @@
 		FECD0FEF1ED98774003CDFAF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FEE1ED98774003CDFAF /* Contact.swift */; };
 		FECD0FF11ED98FB6003CDFAF /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */; };
 		FECD0FF31ED9AF8F003CDFAF /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */; };
-		FECD10021EDC9CA1003CDFAF /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD10001EDC9CA1003CDFAF /* JSON.swift */; };
-		FECD10041EDC9D2A003CDFAF /* WatSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD10031EDC9D2A003CDFAF /* WatSwift.swift */; };
 		FECD10061EDCF2B9003CDFAF /* VerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD10051EDCF2B9003CDFAF /* VerifyVC.swift */; };
+		FEF644781EE4C327003A6494 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF6445E1EE4C327003A6494 /* Info.plist */; };
+		FEF644791EE4C327003A6494 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6445F1EE4C327003A6494 /* JSON.swift */; };
+		FEF6447A1EE4C327003A6494 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644601EE4C327003A6494 /* Response.swift */; };
+		FEF6447B1EE4C327003A6494 /* WatBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644611EE4C327003A6494 /* WatBase.swift */; };
+		FEF6447C1EE4C327003A6494 /* WatSwift.API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644621EE4C327003A6494 /* WatSwift.API.swift */; };
+		FEF6447D1EE4C327003A6494 /* WatSwift.Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644631EE4C327003A6494 /* WatSwift.Awards.swift */; };
+		FEF6447E1EE4C327003A6494 /* WatSwift.Blogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644641EE4C327003A6494 /* WatSwift.Blogs.swift */; };
+		FEF6447F1EE4C327003A6494 /* WatSwift.Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644651EE4C327003A6494 /* WatSwift.Buildings.swift */; };
+		FEF644801EE4C327003A6494 /* WatSwift.Codes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644661EE4C327003A6494 /* WatSwift.Codes.swift */; };
+		FEF644811EE4C327003A6494 /* WatSwift.Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644671EE4C327003A6494 /* WatSwift.Courses.swift */; };
+		FEF644821EE4C327003A6494 /* WatSwift.Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644681EE4C327003A6494 /* WatSwift.Directory.swift */; };
+		FEF644831EE4C327003A6494 /* WatSwift.Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644691EE4C327003A6494 /* WatSwift.Events.swift */; };
+		FEF644841EE4C327003A6494 /* WatSwift.Feds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6446A1EE4C327003A6494 /* WatSwift.Feds.swift */; };
+		FEF644851EE4C327003A6494 /* WatSwift.FoodServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6446B1EE4C327003A6494 /* WatSwift.FoodServices.swift */; };
+		FEF644861EE4C327003A6494 /* WatSwift.News.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6446D1EE4C327003A6494 /* WatSwift.News.swift */; };
+		FEF644871EE4C327003A6494 /* WatSwift.Opportunities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6446E1EE4C327003A6494 /* WatSwift.Opportunities.swift */; };
+		FEF644881EE4C327003A6494 /* WatSwift.Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6446F1EE4C327003A6494 /* WatSwift.Parking.swift */; };
+		FEF644891EE4C327003A6494 /* WatSwift.PointsOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644701EE4C327003A6494 /* WatSwift.PointsOfInterest.swift */; };
+		FEF6448A1EE4C327003A6494 /* WatSwift.Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644711EE4C327003A6494 /* WatSwift.Resources.swift */; };
+		FEF6448B1EE4C327003A6494 /* WatSwift.Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644721EE4C327003A6494 /* WatSwift.Server.swift */; };
+		FEF6448C1EE4C327003A6494 /* WatSwift.Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644731EE4C327003A6494 /* WatSwift.Services.swift */; };
+		FEF6448D1EE4C327003A6494 /* WatSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644741EE4C327003A6494 /* WatSwift.swift */; };
+		FEF6448E1EE4C327003A6494 /* WatSwift.Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644751EE4C327003A6494 /* WatSwift.Terms.swift */; };
+		FEF6448F1EE4C327003A6494 /* WatSwift.Transit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644761EE4C327003A6494 /* WatSwift.Transit.swift */; };
+		FEF644901EE4C327003A6494 /* WatSwift.Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644771EE4C327003A6494 /* WatSwift.Weather.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEF644591EE4C31D003A6494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF644541EE4C31D003A6494 /* WatSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1C857EB1D3CDE7100CA77C7;
+			remoteInfo = WatSwift;
+		};
+		FEF6445B1EE4C31D003A6494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF644541EE4C31D003A6494 /* WatSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1C857F41D3CDE7100CA77C7;
+			remoteInfo = WatSwiftTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		10D31647109087C79075812A /* Pods_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,9 +85,34 @@
 		FECD0FEE1ED98774003CDFAF /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		FECD0FF01ED98FB6003CDFAF /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
-		FECD10001EDC9CA1003CDFAF /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		FECD10031EDC9D2A003CDFAF /* WatSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.swift; sourceTree = "<group>"; };
 		FECD10051EDCF2B9003CDFAF /* VerifyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyVC.swift; sourceTree = "<group>"; };
+		FEF644541EE4C31D003A6494 /* WatSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatSwift.xcodeproj; path = "../../Downloads/WatSwift-master 3/WatSwift.xcodeproj"; sourceTree = "<group>"; };
+		FEF6445E1EE4C327003A6494 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF6445F1EE4C327003A6494 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		FEF644601EE4C327003A6494 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FEF644611EE4C327003A6494 /* WatBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatBase.swift; sourceTree = "<group>"; };
+		FEF644621EE4C327003A6494 /* WatSwift.API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.API.swift; sourceTree = "<group>"; };
+		FEF644631EE4C327003A6494 /* WatSwift.Awards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Awards.swift; sourceTree = "<group>"; };
+		FEF644641EE4C327003A6494 /* WatSwift.Blogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Blogs.swift; sourceTree = "<group>"; };
+		FEF644651EE4C327003A6494 /* WatSwift.Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Buildings.swift; sourceTree = "<group>"; };
+		FEF644661EE4C327003A6494 /* WatSwift.Codes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Codes.swift; sourceTree = "<group>"; };
+		FEF644671EE4C327003A6494 /* WatSwift.Courses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Courses.swift; sourceTree = "<group>"; };
+		FEF644681EE4C327003A6494 /* WatSwift.Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Directory.swift; sourceTree = "<group>"; };
+		FEF644691EE4C327003A6494 /* WatSwift.Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Events.swift; sourceTree = "<group>"; };
+		FEF6446A1EE4C327003A6494 /* WatSwift.Feds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Feds.swift; sourceTree = "<group>"; };
+		FEF6446B1EE4C327003A6494 /* WatSwift.FoodServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.FoodServices.swift; sourceTree = "<group>"; };
+		FEF6446C1EE4C327003A6494 /* WatSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatSwift.h; sourceTree = "<group>"; };
+		FEF6446D1EE4C327003A6494 /* WatSwift.News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.News.swift; sourceTree = "<group>"; };
+		FEF6446E1EE4C327003A6494 /* WatSwift.Opportunities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Opportunities.swift; sourceTree = "<group>"; };
+		FEF6446F1EE4C327003A6494 /* WatSwift.Parking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Parking.swift; sourceTree = "<group>"; };
+		FEF644701EE4C327003A6494 /* WatSwift.PointsOfInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.PointsOfInterest.swift; sourceTree = "<group>"; };
+		FEF644711EE4C327003A6494 /* WatSwift.Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Resources.swift; sourceTree = "<group>"; };
+		FEF644721EE4C327003A6494 /* WatSwift.Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Server.swift; sourceTree = "<group>"; };
+		FEF644731EE4C327003A6494 /* WatSwift.Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Services.swift; sourceTree = "<group>"; };
+		FEF644741EE4C327003A6494 /* WatSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.swift; sourceTree = "<group>"; };
+		FEF644751EE4C327003A6494 /* WatSwift.Terms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Terms.swift; sourceTree = "<group>"; };
+		FEF644761EE4C327003A6494 /* WatSwift.Transit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Transit.swift; sourceTree = "<group>"; };
+		FEF644771EE4C327003A6494 /* WatSwift.Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +147,7 @@
 		FECD0FBE1ED91A08003CDFAF = {
 			isa = PBXGroup;
 			children = (
+				FEF644541EE4C31D003A6494 /* WatSwift.xcodeproj */,
 				FECD0FC91ED91A08003CDFAF /* chat */,
 				FECD0FC81ED91A08003CDFAF /* Products */,
 				0CF81676F90B5E3D78E2F6BD /* Pods */,
@@ -100,7 +166,7 @@
 		FECD0FC91ED91A08003CDFAF /* chat */ = {
 			isa = PBXGroup;
 			children = (
-				FECD0FFF1EDC9C7F003CDFAF /* WatSwift */,
+				FEF6445D1EE4C327003A6494 /* WatSwift */,
 				FECD0FDF1ED91EB3003CDFAF /* Plugins */,
 				FECD0FDE1ED91EA7003CDFAF /* Controller */,
 				FECD0FDD1ED91EA0003CDFAF /* View */,
@@ -152,14 +218,47 @@
 			name = Plugins;
 			sourceTree = "<group>";
 		};
-		FECD0FFF1EDC9C7F003CDFAF /* WatSwift */ = {
+		FEF644551EE4C31D003A6494 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FECD10031EDC9D2A003CDFAF /* WatSwift.swift */,
-				FECD10001EDC9CA1003CDFAF /* JSON.swift */,
+				FEF6445A1EE4C31D003A6494 /* WatSwift.framework */,
+				FEF6445C1EE4C31D003A6494 /* WatSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF6445D1EE4C327003A6494 /* WatSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FEF6445E1EE4C327003A6494 /* Info.plist */,
+				FEF6445F1EE4C327003A6494 /* JSON.swift */,
+				FEF644601EE4C327003A6494 /* Response.swift */,
+				FEF644611EE4C327003A6494 /* WatBase.swift */,
+				FEF644621EE4C327003A6494 /* WatSwift.API.swift */,
+				FEF644631EE4C327003A6494 /* WatSwift.Awards.swift */,
+				FEF644641EE4C327003A6494 /* WatSwift.Blogs.swift */,
+				FEF644651EE4C327003A6494 /* WatSwift.Buildings.swift */,
+				FEF644661EE4C327003A6494 /* WatSwift.Codes.swift */,
+				FEF644671EE4C327003A6494 /* WatSwift.Courses.swift */,
+				FEF644681EE4C327003A6494 /* WatSwift.Directory.swift */,
+				FEF644691EE4C327003A6494 /* WatSwift.Events.swift */,
+				FEF6446A1EE4C327003A6494 /* WatSwift.Feds.swift */,
+				FEF6446B1EE4C327003A6494 /* WatSwift.FoodServices.swift */,
+				FEF6446C1EE4C327003A6494 /* WatSwift.h */,
+				FEF6446D1EE4C327003A6494 /* WatSwift.News.swift */,
+				FEF6446E1EE4C327003A6494 /* WatSwift.Opportunities.swift */,
+				FEF6446F1EE4C327003A6494 /* WatSwift.Parking.swift */,
+				FEF644701EE4C327003A6494 /* WatSwift.PointsOfInterest.swift */,
+				FEF644711EE4C327003A6494 /* WatSwift.Resources.swift */,
+				FEF644721EE4C327003A6494 /* WatSwift.Server.swift */,
+				FEF644731EE4C327003A6494 /* WatSwift.Services.swift */,
+				FEF644741EE4C327003A6494 /* WatSwift.swift */,
+				FEF644751EE4C327003A6494 /* WatSwift.Terms.swift */,
+				FEF644761EE4C327003A6494 /* WatSwift.Transit.swift */,
+				FEF644771EE4C327003A6494 /* WatSwift.Weather.swift */,
 			);
 			name = WatSwift;
-			path = ..;
+			path = "../../../Downloads/WatSwift-master 3/WatSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,12 +312,35 @@
 			mainGroup = FECD0FBE1ED91A08003CDFAF;
 			productRefGroup = FECD0FC81ED91A08003CDFAF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FEF644551EE4C31D003A6494 /* Products */;
+					ProjectRef = FEF644541EE4C31D003A6494 /* WatSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FECD0FC61ED91A08003CDFAF /* chat */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FEF6445A1EE4C31D003A6494 /* WatSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WatSwift.framework;
+			remoteRef = FEF644591EE4C31D003A6494 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEF6445C1EE4C31D003A6494 /* WatSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WatSwiftTests.xctest;
+			remoteRef = FEF6445B1EE4C31D003A6494 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FECD0FC51ED91A08003CDFAF /* Resources */ = {
@@ -228,6 +350,7 @@
 				FECD0FD51ED91A08003CDFAF /* LaunchScreen.storyboard in Resources */,
 				FECD0FE51ED92D47003CDFAF /* GoogleService-Info.plist in Resources */,
 				FECD0FD21ED91A08003CDFAF /* Assets.xcassets in Resources */,
+				FEF644781EE4C327003A6494 /* Info.plist in Resources */,
 				FECD0FD01ED91A08003CDFAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,17 +411,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECD0FF31ED9AF8F003CDFAF /* MessagesHandler.swift in Sources */,
-				FECD10021EDC9CA1003CDFAF /* JSON.swift in Sources */,
+				FEF6448E1EE4C327003A6494 /* WatSwift.Terms.swift in Sources */,
+				FEF6447F1EE4C327003A6494 /* WatSwift.Buildings.swift in Sources */,
+				FEF644791EE4C327003A6494 /* JSON.swift in Sources */,
+				FEF644871EE4C327003A6494 /* WatSwift.Opportunities.swift in Sources */,
+				FEF644841EE4C327003A6494 /* WatSwift.Feds.swift in Sources */,
+				FEF6448B1EE4C327003A6494 /* WatSwift.Server.swift in Sources */,
 				FECD0FF11ED98FB6003CDFAF /* ChatVC.swift in Sources */,
 				FECD0FE11ED91EEA003CDFAF /* SignInVC.swift in Sources */,
+				FEF644891EE4C327003A6494 /* WatSwift.PointsOfInterest.swift in Sources */,
+				FEF6447A1EE4C327003A6494 /* Response.swift in Sources */,
+				FEF644811EE4C327003A6494 /* WatSwift.Courses.swift in Sources */,
+				FEF644801EE4C327003A6494 /* WatSwift.Codes.swift in Sources */,
 				FECD0FCB1ED91A08003CDFAF /* AppDelegate.swift in Sources */,
+				FEF644861EE4C327003A6494 /* WatSwift.News.swift in Sources */,
+				FEF6447C1EE4C327003A6494 /* WatSwift.API.swift in Sources */,
+				FEF644831EE4C327003A6494 /* WatSwift.Events.swift in Sources */,
 				FECD0FEB1ED97BBC003CDFAF /* DBProvider.swift in Sources */,
+				FEF6447B1EE4C327003A6494 /* WatBase.swift in Sources */,
+				FEF6448A1EE4C327003A6494 /* WatSwift.Resources.swift in Sources */,
+				FEF6447D1EE4C327003A6494 /* WatSwift.Awards.swift in Sources */,
 				FECD0FE71ED93F37003CDFAF /* AuthProvider.swift in Sources */,
+				FEF6448C1EE4C327003A6494 /* WatSwift.Services.swift in Sources */,
 				FECD10061EDCF2B9003CDFAF /* VerifyVC.swift in Sources */,
-				FECD10041EDC9D2A003CDFAF /* WatSwift.swift in Sources */,
+				FEF6448F1EE4C327003A6494 /* WatSwift.Transit.swift in Sources */,
 				FECD0FE31ED921C7003CDFAF /* ContactsVC.swift in Sources */,
+				FEF644851EE4C327003A6494 /* WatSwift.FoodServices.swift in Sources */,
+				FEF6447E1EE4C327003A6494 /* WatSwift.Blogs.swift in Sources */,
 				FECD0FED1ED97C8F003CDFAF /* Constants.swift in Sources */,
 				FECD0FEF1ED98774003CDFAF /* Contact.swift in Sources */,
+				FEF644901EE4C327003A6494 /* WatSwift.Weather.swift in Sources */,
+				FEF6448D1EE4C327003A6494 /* WatSwift.swift in Sources */,
+				FEF644881EE4C327003A6494 /* WatSwift.Parking.swift in Sources */,
+				FEF644821EE4C327003A6494 /* WatSwift.Directory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
