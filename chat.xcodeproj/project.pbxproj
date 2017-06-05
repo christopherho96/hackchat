@@ -47,6 +47,7 @@
 		FEF6448E1EE4C327003A6494 /* WatSwift.Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644751EE4C327003A6494 /* WatSwift.Terms.swift */; };
 		FEF6448F1EE4C327003A6494 /* WatSwift.Transit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644761EE4C327003A6494 /* WatSwift.Transit.swift */; };
 		FEF644901EE4C327003A6494 /* WatSwift.Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644771EE4C327003A6494 /* WatSwift.Weather.swift */; };
+		FEF644931EE4EE86003A6494 /* TextCharacterLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF644921EE4EE86003A6494 /* TextCharacterLimit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		FEF644751EE4C327003A6494 /* WatSwift.Terms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Terms.swift; sourceTree = "<group>"; };
 		FEF644761EE4C327003A6494 /* WatSwift.Transit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Transit.swift; sourceTree = "<group>"; };
 		FEF644771EE4C327003A6494 /* WatSwift.Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatSwift.Weather.swift; sourceTree = "<group>"; };
+		FEF644921EE4EE86003A6494 /* TextCharacterLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCharacterLimit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				FECD0FE61ED93F37003CDFAF /* AuthProvider.swift */,
 				FECD0FEA1ED97BBC003CDFAF /* DBProvider.swift */,
 				FECD0FF21ED9AF8F003CDFAF /* MessagesHandler.swift */,
+				FEF644921EE4EE86003A6494 /* TextCharacterLimit.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				FEF644861EE4C327003A6494 /* WatSwift.News.swift in Sources */,
 				FEF6447C1EE4C327003A6494 /* WatSwift.API.swift in Sources */,
 				FEF644831EE4C327003A6494 /* WatSwift.Events.swift in Sources */,
+				FEF644931EE4EE86003A6494 /* TextCharacterLimit.swift in Sources */,
 				FECD0FEB1ED97BBC003CDFAF /* DBProvider.swift in Sources */,
 				FEF6447B1EE4C327003A6494 /* WatBase.swift in Sources */,
 				FEF6448A1EE4C327003A6494 /* WatSwift.Resources.swift in Sources */,
