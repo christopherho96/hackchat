@@ -20,10 +20,19 @@ class VerifyVC: UIViewController {
     
     @IBOutlet weak var studentIdDisplay: UITextField!
 
+    @IBOutlet weak var pinDescription: UILabel!
+    
+    @IBOutlet weak var pinTextField: UITextField!
+    
+    @IBOutlet weak var pinVerifyButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        pinDescription.isHidden = true
+        pinTextField.isHidden = true
+        pinVerifyButton.isHidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -47,8 +56,15 @@ class VerifyVC: UIViewController {
                     
                     self.studentEmail = data["email_addresses"][0].string
                     self.studentName = data["full_name"].string
-                    print(self.studentEmail!)
-                    print(self.studentName!)
+                    //print(self.studentEmail!)
+                    //print(self.studentName!)
+                    
+                    self.alertTheUser(title: "Student ID Confirmed", message: "A 6-digit pin has been sent to your student email.");
+                    
+                    self.pinDescription.isHidden = false
+                    self.pinTextField.isHidden = false
+                    self.pinVerifyButton.isHidden = false
+                    
                 }
                     
                 else{
